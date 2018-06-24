@@ -6,10 +6,15 @@ public class CarSimulator {
 
         System.out.println("success");
 
-        Car myToyota = new Car("Red", "Leather");
+        Car myToyota = new Car("Blue", "wood");
 
-        System.out.println("car is " + myToyota.colour + ", has " + myToyota.getNumberOfSeats() + " seats and " + myToyota.getmInterior() + " interior");
-        myToyota.drive();
+        Car myHonda = new Car();
+        myHonda.drive();
+
+        SelfDrivingCar autoBot = new SelfDrivingCar("Yellow", "Plastic");
+        autoBot.drive();
+        System.out.println("autobot colour is "+autoBot.colour);
+
     }
 
 }
